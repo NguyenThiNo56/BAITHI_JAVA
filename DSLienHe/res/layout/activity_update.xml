@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UpdateActivity" >
+
+    <ImageView
+        android:id="@+id/imghinhanh"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/edtten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imghinhanh"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imghinhanh"
+        android:ems="10"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/btnchuphinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnchonhinh"
+        android:layout_alignTop="@+id/imghinhanh"
+        android:layout_marginTop="24dp"
+        android:text="Chụp Hình" />
+
+    <Button
+        android:id="@+id/btnchonhinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imghinhanh"
+        android:layout_alignRight="@+id/edtten"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="27dp"
+        android:text="Chọn Hình" />
+
+    <Button
+        android:id="@+id/btnhuy"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnluu"
+        android:layout_alignBottom="@+id/btnluu"
+        android:layout_alignLeft="@+id/btnchonhinh"
+        android:text="Hủy" />
+
+    <EditText
+        android:id="@+id/edtmqh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtsdt"
+        android:layout_alignRight="@+id/edtsdt"
+        android:layout_below="@+id/edtsdt"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtsdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtten"
+        android:layout_alignRight="@+id/edtten"
+        android:layout_below="@+id/edtten"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnluu"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtmqh"
+        android:layout_below="@+id/edtmqh"
+        android:layout_marginLeft="16dp"
+        android:text="Lưu" />
+
+</RelativeLayout>
